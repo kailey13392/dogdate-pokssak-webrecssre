@@ -67,17 +67,12 @@
   margin: 0 auto;
 }
 
-.my-dog-title-on-card {
-  position: absolute;
-  top: 15%; /* Moved up */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff; /* White color for better visibility on photo */
-  font-size: 2rem;
-  font-weight: bold;
-  z-index: 10;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  pointer-events: none;
+.my-dog-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+  color: #333;
 }
 
 .my-dog-profile-wrapper:hover {
