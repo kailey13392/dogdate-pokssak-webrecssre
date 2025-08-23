@@ -29,7 +29,7 @@ function MainLayout() {
   return (
     <div className="main-layout">
       <header className="main-header">
-        <h1 className="main-header-title">Mungeting 🐾</h1>
+        <h1 className="main-header-title">Mungeting</h1>
         <button onClick={handleLogout} className="logout-button">
           로그아웃
         </button>
