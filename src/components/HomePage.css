@@ -69,14 +69,14 @@
 
 .my-dog-title-on-card {
   position: absolute;
-  top: 85%; /* Moved down */
+  top: 15%; /* Moved up */
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #5a5a5a; /* Darker gray */
+  color: #ffffff; /* White color for better visibility on photo */
   font-size: 2rem;
   font-weight: bold;
   z-index: 10;
-  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   pointer-events: none;
 }
 
