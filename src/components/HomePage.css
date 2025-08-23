@@ -1,7 +1,7 @@
 /* src/components/HomePage.css */
 .home-container {
     padding: 1rem;
-    background-color: #D2B48C;
+    background-color: #ffffff;
     height: 100%;
     box-sizing: border-box;
     overflow-y: auto;
@@ -61,7 +61,7 @@
   justify-content: center;
   width: 300px; /* 1.5 times the standard dog-card width */
   height: 281.25px; /* 1.5 times the standard dog-card height */
-  padding: 1.5rem 0; /* 여백도 함께 키워 더 시원한 느낌으로 */
+  padding: 1.5rem 0; /* 여백도 함께 키워 더 ��원한 느낌으로 */
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
   margin: 0 auto;
