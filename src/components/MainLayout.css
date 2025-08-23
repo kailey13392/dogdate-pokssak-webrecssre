@@ -8,7 +8,7 @@
   height: 97vh;
   background-color: #ffffff;
   max-width: 420px; /* 모바일 화면 너비 기준 */
-  margin: 20px auto; /* 중앙 정렬 및 상하 여백 */
+  margin: 20px auto; /* 중앙 ��렬 및 상하 여백 */
   border-radius: 12px; /* 둥근 모서리 */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
   overflow: hidden; /* 내용이 넘칠 경우 숨김 */
@@ -57,7 +57,8 @@
 }
 
 .logout-paw-icon {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
+  line-height: 1;
 }
 
 .logout-text {

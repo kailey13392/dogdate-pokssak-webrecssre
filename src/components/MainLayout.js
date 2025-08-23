@@ -31,7 +31,8 @@ function MainLayout() {
       <header className="main-header">
         <h1 className="main-header-title">Mungeting</h1>
         <button onClick={handleLogout} className="stylish-logout-button">
-          🐾 로그아웃
+          <span className="logout-paw-icon">🐾</span>
+          <span className="logout-text">로그아웃</span>
         </button>
       </header>
       <main className="main-content">
