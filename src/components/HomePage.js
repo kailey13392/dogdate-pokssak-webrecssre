@@ -129,11 +129,11 @@ function HomePage() {
           <div className="dog-list">
             {popularDogs.map((dog, index) => (
               <TiltableDogCard key={dog.id} dog={dog} onClick={() => openModal(dog)}>
-                <div className="rank-badge likes-badge" data-rank={index + 1}>{index + 1}</div>
+                {index === 0 && <div className="rank-badge likes-badge first-place"><HiHeart /></div>}
                 <img src={dog.photoUrl || dog.imageUrl} alt={dog.name} className="dog-card-background-image" />
                 <div className="dog-card-content">
                   <h3 className="dog-name">{dog.name}</h3>
-                  <p className="dog-details">{dog.breed} / {dog.age}살</p>
+                  <p className="dog-details">{dog.breed} / {dog.age}��</p>
                   <p className="dog-extra-info">하트: {dog.likes}</p>
                 </div>
               </TiltableDogCard>
