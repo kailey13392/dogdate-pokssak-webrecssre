@@ -166,13 +166,13 @@
 }
 
 .action-button.match {
-  background: linear-gradient(135deg, #8D6E63 0%, #6D4C41 100%);
+  background: linear-gradient(135deg, #D2B48C 0%, #BFA76F 100%);
   color: #ffffff;
 }
 
 .action-button.match:hover {
-  background: linear-gradient(135deg, #6D4C41 0%, #5D4037 100%);
-  box-shadow: 0 8px 30px rgba(141, 110, 99, 0.3), 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #BFA76F 0%, #A69659 100%);
+  box-shadow: 0 8px 30px rgba(210, 180, 140, 0.3), 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .no-more-cards {
