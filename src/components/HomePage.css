@@ -65,7 +65,7 @@
 }
 
 .likes-icon {
-  color: #374151; /* 모던한 다크 그레이 */
+  color: #374151; /* 모던한 다크 ���레이 */
   filter: drop-shadow(0 1px 2px rgba(55, 65, 81, 0.15));
 }
 
@@ -169,20 +169,55 @@
   position: absolute;
   top: 1.5rem;
   font-size: 2rem;
-  color: #d4a574; /* 골드 컬러 */
-  opacity: 0.3;
+  color: #c19a6b; /* 세련된 골드 컬러 */
+  opacity: 0.25;
   z-index: 1;
-  filter: drop-shadow(0 2px 4px rgba(212, 165, 116, 0.3));
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(193, 154, 107, 0.2));
 }
 
 .trophy-left {
   left: 1.5rem;
-  transform: rotate(-15deg);
+  transform: rotate(-12deg);
+  animation: trophyFloat 4s ease-in-out infinite;
 }
 
 .trophy-right {
   right: 1.5rem;
-  transform: rotate(15deg);
+  transform: rotate(12deg);
+  animation: trophyFloat 4s ease-in-out infinite 2s; /* 2초 딜레이 */
+}
+
+.hall-of-fame-container:hover .trophy-icon {
+  opacity: 0.4;
+  transform: scale(1.05);
+}
+
+.hall-of-fame-container:hover .trophy-left {
+  transform: rotate(-12deg) scale(1.05);
+}
+
+.hall-of-fame-container:hover .trophy-right {
+  transform: rotate(12deg) scale(1.05);
+}
+
+/* 트로피 떠다니는 애니메이션 */
+@keyframes trophyFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(-12deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(-12deg);
+  }
+}
+
+@keyframes trophyFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
 }
 
 /* 명예의전당 제목 강화 */
