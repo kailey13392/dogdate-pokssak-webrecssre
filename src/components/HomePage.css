@@ -61,6 +61,32 @@
 }
 
 /* 멍예의 ���당 섹��� 공통 스타일 */
+/* 내 강아지 섹션과 명예의전당 구분 */
+.my-dog-section {
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.my-dog-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ddd, transparent);
+}
+
+/* 명예의전당 컨테이너 */
+.hall-of-fame-container {
+  background-color: #fafafa;
+  border-radius: 16px;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  position: relative;
+}
+
 .hall-of-fame-section {
     margin-top: 2rem;
     margin-bottom: 2rem;
