@@ -140,7 +140,7 @@
 .dog-list {
     display: flex;
     gap: 1rem; /* 카드 사이 간격 */
-    padding: 0 1rem; /* Add horizontal padding to the list itself */
+    padding: 0 2rem; /* 명예의전당 컨테이너 내부에서 더 큰 패딩 */
 }
   
 .dog-card {
