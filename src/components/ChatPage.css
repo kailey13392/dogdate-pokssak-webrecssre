@@ -56,11 +56,11 @@
 }
 
 .message-content {
-  padding: 0.45rem 0.7rem;
+  padding: 0.35rem 0.55rem;
   max-width: 70%;
   word-wrap: break-word;
   font-size: 0.95rem;
-  line-height: 1.4;
+  line-height: 1.35;
   position: relative;
 }
 
