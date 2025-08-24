@@ -70,7 +70,7 @@
   position: relative;
 }
 
-/* 위치순 섹션 오버레�� 버튼을 헤더 위치로 이동 */
+/* 위치순 섹션 오버레이 버튼을 헤더 위치로 이동 */
 .location-section .scroll-overlay-btn {
   position: absolute;
   top: -4rem;
@@ -276,7 +276,7 @@
   border: none;
 }
 
-/* 트로피 아이콘 - 숨김 */
+/* 트로피 아이콘 - 숨��� */
 .trophy-icon {
   display: none;
 }
@@ -301,9 +301,15 @@
 /* 트로피 떠다��는 애니메이션 */
 
 
-/* 명예의전당 제목 - 숨김 */
+/* 명예의전당 제목 강화 */
 .hall-of-fame-title {
-  display: none;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  line-height: 1;
+  text-align: center;
+  color: #1f2937; /* 모던한 다크 그레이 */
+  letter-spacing: -0.02em;
 }
 
 .hall-of-fame-section {
@@ -388,7 +394,7 @@
   position: relative; /* For positioning children */
   /* flex: 0 0 150px; */ /* Removed fixed size */
   /* width: 150px; */ /* Removed fixed size */
-  aspect-ratio: 1 / 1.25; /* 세로가 약간 긴 카드 비율 */
+  aspect-ratio: 1 / 1.25; /* 세��가 약간 긴 카드 비율 */
   background-color: #f0f0f0; /* Fallback color */
   border-radius: 16px; /* 더 둥근 모서리 */
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.06); /* 더 세련된 그림자 */
