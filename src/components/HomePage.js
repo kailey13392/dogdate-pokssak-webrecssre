@@ -57,7 +57,7 @@ function HomePage() {
       setNearbyDogs([
         { id: 6, name: '해피', breed: '비글', age: 1, gender: '남아', city: '서울', district: '용산구', bio: '지치지 않는 에너자이저 해피! 같이 뛰어놀아요!', imageUrl: 'https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=800', distance: '1km' },
         { id: 7, name: '두부', breed: '프렌치 불독', age: 2, gender: '여아', city: '서울', district: '성동구', bio: '먹는 것과 자는 것을 가장 좋아하는 순둥이 두부.', imageUrl: 'https://images.unsplash.com/photo-1597633425046-08f5110420b5?q=80&w=800', distance: '2km' },
-        { id: 8, name: '콩이', breed: '퍼그', age: 3, gender: '여아', city: '서울', district: '광진구', bio: '주름진 얼굴이 매력적인 콩이에요. 느긋한 산책을 즐겨요.', imageUrl: 'https://images.unsplash.com/photo-1534351450181-ea6f7d45e388?q=80&w=800', distance: '3km' },
+        { id: 8, name: '콩이', breed: '퍼그', age: 3, gender: '여아', city: '서울', district: '광진구', bio: '주름진 얼굴��� 매력적인 콩이에요. 느긋한 산책을 즐겨요.', imageUrl: 'https://images.unsplash.com/photo-1534351450181-ea6f7d45e388?q=80&w=800', distance: '3km' },
         { id: 9, name: '별이', breed: '치와와', age: 4, gender: '여아', city: '서울', district: '강동구', bio: '작은 몸집에 큰 용기를 가졌어요. 주�� 껌딱지랍니다.', imageUrl: 'https://images.unsplash.com/photo-1601979031425-12f4a45978c6?q=80&w=800', distance: '4km' },
         { id: 10, name: '밤비', breed: '푸들', age: 5, gender: '남아', city: '서울', district: '송파구', bio: '똑똑하고 훈련을 잘 받아요. 새로운 개인기를 배우고 싶어요!', imageUrl: 'https://images.unsplash.com/photo-1585679104874-83d49a905a8e?q=80&w=800', distance: '5km' },
       ]);
@@ -73,15 +73,13 @@ function HomePage() {
   return (
     <div className="home-container">
       <section className="my-dog-section">
-        <div className="my-dog-header-row">
-          <button className="settings-button" aria-label="환경설정">
-            <FiSettings size={28} color="#111" />
-          </button>
-        </div>
         <div className="my-dog-title-container">
           <h2 className="my-dog-title">내 강아지</h2>
         </div>
         <div className="my-dog-profile-wrapper">
+          <button className="settings-button settings-button-on-card" aria-label="환경설정">
+            <FiSettings size={28} color="#111" />
+          </button>
           <TiltableDogCard dog={myDog} onClick={() => openModal(myDog)}>
             <MyDogProfileCard
               dog={myDog}
