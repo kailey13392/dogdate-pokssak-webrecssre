@@ -84,6 +84,18 @@
   color: #111827;
 }
 
+/* 섹션 호버 시 버튼 표시 */
+.dog-list-wrapper:hover .scroll-overlay-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dog-list-wrapper:hover .scroll-overlay-btn:hover {
+  color: #1f2937;
+  transform: translateY(-50%) scale(1.1);
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.9);
+}
+
 /* 작은 화면에서는 오버레이 버튼 숨기기 */
 @media (max-width: 480px) {
   .scroll-overlay-btn {
