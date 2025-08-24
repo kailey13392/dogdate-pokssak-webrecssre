@@ -260,7 +260,7 @@
     padding: 0.5rem 0 1rem 0; /* Add some padding for aesthetics */
 }
 
-/* 스크롤바 숨기기 (선택 사항) */
+/* 스크롤바 숨기�� (선택 사항) */
 .dog-list-scroll-container::-webkit-scrollbar {
     display: none;
 }
@@ -329,7 +329,7 @@
 }
 
 .dog-card:hover .dog-card-background-image {
-  transform: scale(1.05); /* 호버 시 ���미지 확대 */
+  transform: scale(1.05); /* 호버 시 이미지 확대 */
 }
 
 .dog-card:hover {
@@ -338,8 +338,8 @@
 }
 
 .dog-card:hover .rank-badge {
-  transform: scale(1.1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  color: #1f2937;
 }
 
 /* 순위 뱃지 트랜지션 */
