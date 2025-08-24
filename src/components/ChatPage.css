@@ -122,76 +122,61 @@
   
   
   
-  .chat-input-form {
-  
+.chat-input-form {
   display: flex;
-  
-  padding: 1rem;
-  
-  border-top: 1px solid #e5e7eb; /* neutral-200 */
-  
-  background-color: #f7f7f7; /* Light background for input area */
-  
-  }
-  
-  
-  
-  .chat-input-form input {
-  
+  padding: 0.8rem 1rem;
+  border-top: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.chat-input-form input {
   flex-grow: 1;
-  
-  padding: 0.75rem 1rem;
-  
-  border: 1px solid #d1d5db; /* neutral-300 */
-  
-  border-radius: 0.5rem; /* rounded-lg */
-  
-  background-color: white;
-  
+  padding: 0.7rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  background-color: #f8f9fa;
   box-sizing: border-box;
-  
-  }
-  
-  
-  
-  .chat-input-form input:focus {
-  
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.chat-input-form input:focus {
   outline: none;
-  
-  border-color: transparent;
-  
-  box-shadow: 0 0 0 2px #6b7280; /* ring-2 ring-neutral-500 */
-  
-  }
-  
-  
-  
-  .chat-input-form button {
-  
-  margin-left: 0.75rem;
-  
-  padding: 0.75rem 1rem;
-  
+  border-color: #111827;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 1px #111827;
+}
+
+.chat-input-form input::placeholder {
+  color: #9ca3af;
+}
+
+.chat-input-form button {
+  padding: 0.7rem;
   border: none;
-  
-  background-color: #111827; /* Primary action color */
-  
+  background-color: #111827;
   color: white;
-  
-  border-radius: 0.5rem;
-  
+  border-radius: 50%;
   cursor: pointer;
-  
   font-weight: 600;
-  
-  transition: background-color 0.2s ease-in-out;
-  
-  }
-  
-  
-  
-  .chat-input-form button:hover {
-  
-  background-color: #2d3748; /* Darker shade on hover */
-  
-  }
+  transition: all 0.2s ease;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.chat-input-form button:hover {
+  background-color: #374151;
+  transform: scale(1.05);
+}
+
+.chat-input-form button:disabled {
+  background-color: #d1d5db;
+  cursor: not-allowed;
+  transform: none;
+}
