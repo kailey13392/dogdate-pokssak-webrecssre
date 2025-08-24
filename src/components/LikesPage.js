@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useOutletContext } from 'react-router-dom';
 import DogProfileCard from './DogprofileCard';
-import { HiCheck, HiX } from "react-icons/hi2";
+import { HiCheckCircle, HiXCircle } from "react-icons/hi2";
 import './LikesPage.css';
 
 // --- 가짜 데이터 ---
@@ -33,7 +33,7 @@ const fakeSentRequests = [
       gender: '여아',
       city: '인천',
       district: '연수구',
-      bio: '순하고 낮잠 자는 걸 좋아하는 보리 공주님이에요.',
+      bio: '순하고 낮잠 자는 걸 좋아하는 보리 공주님이��요.',
       imageUrl: 'https://images.unsplash.com/photo-1548681528-6a5c45b66b42?q=80&w=800',
       likes: 100
     }
