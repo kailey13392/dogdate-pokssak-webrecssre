@@ -107,7 +107,7 @@ function HomePage() {
           <div className="dog-list">
             {nearbyDogs.map((dog, index) => (
               <TiltableDogCard key={dog.id} dog={dog} onClick={() => openModal(dog)}>
-                <div className="rank-badge location-badge" data-rank={index + 1}>{index + 1}</div>
+                {index === 0 && <div className="rank-badge location-badge first-place"><HiHeart /></div>}
                 <img src={dog.photoUrl || dog.imageUrl} alt={dog.name} className="dog-card-background-image" />
                 <div className="dog-card-content">
                   <h3 className="dog-name">{dog.name}</h3>
