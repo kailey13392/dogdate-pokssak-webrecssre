@@ -33,7 +33,8 @@ function MainLayout() {
       <header className="main-header">
         <h1 className="main-header-title">Mungeting</h1>
         <button onClick={handleLogout} className="paw-logout-button" aria-label="로그아웃">
-          <GiPawPrint size={28} />
+          <GiPawPrint size={24} />
+          <span className="logout-label">로그아웃</span>
         </button>
       </header>
       <main className="main-content">
