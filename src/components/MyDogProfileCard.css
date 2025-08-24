@@ -71,9 +71,10 @@
 }
 
 .dog-info-left .dog-name {
-  font-size: 2.2rem; /* 더욱 큰 폰트 사이즈 */
+  font-size: 2.4rem; /* 더 큰 폰트 사이즈 */
   font-weight: 600;
   margin: 0; /* 마진 제거 */
+  margin-left: -0.2rem; /* 약간 왼쪽으로 이동 */
   padding: 0; /* 패딩 제거 */
   color: #ffffff;
   white-space: nowrap;
