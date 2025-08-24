@@ -125,13 +125,13 @@ const ChatPage = () => {
           <div key={msg.id || index} className={`message ${msg.senderId === myUserId ? 'sent' : 'received'}`}>
             <div className="message-content">
               <p>{msg.content}</p>
-              <span className="message-time">
-                {msg.timestamp instanceof Date ?
-                  msg.timestamp.toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }) :
-                  new Date(msg.timestamp).toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' })
-                }
-              </span>
             </div>
+            <span className="message-time">
+              {msg.timestamp instanceof Date ?
+                msg.timestamp.toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }) :
+                new Date(msg.timestamp).toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' })
+              }
+            </span>
           </div>
         ))}
         <div ref={messagesEndRef} />
