@@ -53,6 +53,12 @@
   padding: 0;
 }
 
+/* 위치순 섹션 제목을 사진과 같은 위치에서 시작하게 조정 */
+.location-section .section-title {
+  margin-left: 0;
+  padding-left: 2rem; /* 사진과 같은 시작점 */
+}
+
 .scroll-controls {
   display: flex;
   gap: 0.5rem;
