@@ -7,9 +7,9 @@
   --color-text-primary: #111827;
   --color-text-secondary: #6b7280;
   --color-text-on-accent: #ffffff;
-  --color-action-accept: #5cb85c;
-  --color-action-reject: #BDBDBD; /* Soft Gray */
-  --color-action-match: #5bc0de;
+  --color-action-accept: #E91E63; /* Sophisticated Pink */
+  --color-action-reject: #9E9E9E; /* Modern Gray */
+  --color-action-match: #8D6E63; /* Warm Brown */
 
   --radius-sm: 0.5rem;
   --radius-lg: 16px;
