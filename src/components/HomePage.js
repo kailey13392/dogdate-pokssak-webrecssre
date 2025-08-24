@@ -89,11 +89,13 @@ function HomePage() {
           </TiltableDogCard>
         </div>
       </section>
-      <div className="hall-of-fame-section">
-        <h2 className="hall-of-fame-title">명예의전당</h2>
-      </div>
 
-      <section className="hall-of-fame-section">
+      <div className="hall-of-fame-container">
+        <div className="hall-of-fame-section">
+          <h2 className="hall-of-fame-title">명예의전당</h2>
+        </div>
+
+        <section className="hall-of-fame-section">
         <h2 className="section-title">위치순</h2>
         <div className="dog-list-scroll-container">
           <div className="dog-list">
@@ -127,7 +129,8 @@ function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 }
