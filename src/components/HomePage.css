@@ -98,7 +98,7 @@
   justify-content: center;
   width: 350px; /* 더 크고 정사각형으로 */
   height: 350px; /* 정사각형으로 width와 동일하게 */
-  padding: 1.5rem 0; /* 여백도 함께 키워 더 ��원한 느낌으로 */
+  padding: 1.5rem 0; /* 여백도 함께 키워 더 ��원한 느���으로 */
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
   margin: 0 auto;
@@ -183,10 +183,16 @@
   justify-content: flex-end; /* Push content to the bottom */
   padding: 0.75rem;
   box-sizing: border-box;
-  /* Gradient for text readability */
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 20%, transparent 80%);
+  /* 더 세련된 그라데이션 배경 */
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.35) 50%,
+    rgba(0, 0, 0, 0.1) 80%,
+    transparent 100%
+  );
   color: #ffffff;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.6); /* 더 선명한 텍스트 그림자 */
 }
 
 .dog-card .dog-name {
