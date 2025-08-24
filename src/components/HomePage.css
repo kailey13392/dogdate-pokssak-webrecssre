@@ -55,7 +55,7 @@
 .settings-button-on-card {
   position: absolute;
   top: 2rem;
-  right: 1.5rem;
+  right: 1rem;
   z-index: 10;
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(4px);
@@ -122,7 +122,7 @@
   position: relative; /* For positioning children */
   /* flex: 0 0 150px; */ /* Removed fixed size */
   /* width: 150px; */ /* Removed fixed size */
-  aspect-ratio: 1 / 1.25; /* 세로가 약간 긴 카드 비율 */
+  aspect-ratio: 1 / 1.25; /* 세로가 약간 긴 카드 비�� */
   background-color: #f0f0f0; /* Fallback color */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
