@@ -4,7 +4,6 @@ import DogProfileCard from './DogprofileCard';
 import { HiCheckCircle, HiXCircle } from "react-icons/hi2";
 import './LikesPage.css';
 
-// --- 가짜 데��터 ---
 const fakeSentRequests = [
   {
     id: 1,
@@ -74,7 +73,6 @@ const fakeReceivedRequests = [
     }
   }
 ];
-// --- 가짜 데이터 끝 ---
 
 const LikesPage = () => {
   const { openModal } = useOutletContext();
@@ -85,11 +83,11 @@ const LikesPage = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    // 백엔드 연결 대신 가짜 데이터를 사용합니다.
+    // 실제 백엔드 API를 연결해야 합니다.
     setIsLoading(true);
     setTimeout(() => {
-      setSentRequests(fakeSentRequests);
-      setReceivedRequests(fakeReceivedRequests);
+      setSentRequests([]);
+      setReceivedRequests([]);
       setIsLoading(false);
     }, 500); // 0.5초 로딩 효과
   }, []);
