@@ -57,35 +57,45 @@
   gap: 0.3rem;
 }
 
+.dog-info-left * {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
 .dog-info-right {
   flex: 1;
   display: flex;
   align-items: flex-start;
 }
 
-.dog-profile-card .dog-name {
+.dog-info-left .dog-name {
   font-size: 2.2rem; /* 더욱 큰 폰트 사이즈 */
   font-weight: 600;
-  margin: 0 0 0.5rem; /* Increased margin */
+  margin: 0; /* 마진 제거 */
+  padding: 0; /* 패딩 제거 */
   color: #ffffff;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 1.1; /* 라인 높이 통일 */
 }
 
-.dog-profile-card .dog-details {
+.dog-info-left .dog-details {
   font-size: 1rem; /* Increased font size */
   color: #e0e0e0;
-  line-height: 1.4;
+  line-height: 1.1; /* 라인 높이 통일 */
   margin: 0;
+  padding: 0;
   font-weight: bold; /* 볼드체 적용 */
 }
 
-.dog-profile-card .dog-extra-info {
+.dog-info-left .dog-extra-info {
   font-size: 1rem; /* Increased font size */
   color: #e0e0e0;
-  line-height: 1.4;
+  line-height: 1.1; /* 라인 높이 통일 */
   margin: 0;
+  padding: 0;
   font-weight: normal; /* 일반 폰트 두께 */
 }
 
