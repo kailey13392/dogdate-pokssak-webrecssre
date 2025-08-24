@@ -42,7 +42,7 @@
   position: relative;
 }
 
-/* 오버레이 스크롤 버튼 */
+/* 오버���이 스크롤 버튼 */
 .scroll-overlay-btn {
   position: absolute;
   top: 50%;
@@ -96,9 +96,25 @@
   text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.9);
 }
 
+/* 기존 스크롤 컨트롤도 호버 시에만 표시 (하트순 섹션용) */
+.section-header-with-controls .scroll-controls {
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.hall-of-fame-section:hover .scroll-controls {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* 작은 화면에서는 오버레이 버튼 숨기기 */
 @media (max-width: 480px) {
   .scroll-overlay-btn {
+    display: none;
+  }
+
+  .scroll-controls {
     display: none;
   }
 }
