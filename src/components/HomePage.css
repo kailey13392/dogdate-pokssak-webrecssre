@@ -47,19 +47,20 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.7);
+  background: none;
   border: none;
-  color: white;
-  font-size: 1.5rem;
-  width: 3rem;
-  height: 3rem;
+  color: #374151;
+  font-size: 2rem;
+  font-weight: 900;
+  width: 2.5rem;
+  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
   z-index: 10;
-  backdrop-filter: blur(8px);
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
 }
 
 .scroll-overlay-left {
@@ -71,12 +72,14 @@
 }
 
 .scroll-overlay-btn:hover {
-  background: rgba(0, 0, 0, 0.9);
-  transform: translateY(-50%) scale(1.05);
+  color: #1f2937;
+  transform: translateY(-50%) scale(1.1);
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.9);
 }
 
 .scroll-overlay-btn:active {
   transform: translateY(-50%) scale(0.95);
+  color: #111827;
 }
 
 /* 작은 화면에서는 오버레이 버튼 숨기기 */
