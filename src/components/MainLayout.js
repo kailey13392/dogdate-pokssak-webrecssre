@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Outlet, useNavigate, NavLink } from 'react-router-dom';
 import ProfileModal from './ProfileModal'; // ProfileModal 임포트
+import { HiHome, HiHeart, HiSparkles, HiChatBubbleLeftRight } from 'react-icons/hi2';
 import './MainLayout.css';
 
 const navItems = [
-  { path: '/app/home', icon: 'fa-solid fa-house', label: '홈' },
-  { path: '/app/likes', icon: 'fa-solid fa-heart', label: '하트' },
-  { path: '/app/match', icon: 'fa-solid fa-compass', label: '매치' },
-  { path: '/app/chat-list', icon: 'fa-solid fa-comment', label: '채팅' },
+  { path: '/app/home', icon: HiHome, label: '홈' },
+  { path: '/app/likes', icon: HiHeart, label: '하트' },
+  { path: '/app/match', icon: HiSparkles, label: '매치' },
+  { path: '/app/chat-list', icon: HiChatBubbleLeftRight, label: '채팅' },
 ];
 
 function MainLayout() {
