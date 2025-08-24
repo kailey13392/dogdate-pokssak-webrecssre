@@ -79,11 +79,10 @@
   content: '';
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #ddd, transparent);
+  left: 1rem;
+  right: 1rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e0e0e0, transparent);
 }
 
 /* 명예의전당 컨테이너 */
@@ -106,7 +105,7 @@
   justify-content: center;
   width: 350px; /* 더 크고 정사각형으로 */
   height: 350px; /* 정사각형으로 width와 동일하게 */
-  padding: 1.5rem 0; /* 여백도 함께 키워 더 ��원한 느���으로 */
+  padding: 1.5rem 0; /* 여백도 함께 키워 더 ��원한 ������으로 */
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
   margin: 0 auto;
