@@ -194,7 +194,7 @@
   margin: 0 0 1rem 0;
   line-height: 1;
   text-align: center;
-  color: #1f2937; /* 모던한 다크 그레�� */
+  color: #1f2937; /* 모던한 다크 그레이 */
   letter-spacing: -0.02em;
 }
 
@@ -321,7 +321,7 @@
 }
 
 /* 순위 뱃지 트랜지션 */
-.rank-badge {
+.rank-badge.first-place {
   transition: all 0.3s ease;
 }
 
