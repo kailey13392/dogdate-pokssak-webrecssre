@@ -96,12 +96,16 @@ function HomePage() {
           <h2 className="hall-of-fame-title">명예의전당</h2>
         </div>
 
-        <section className="hall-of-fame-section">
-        <h2 className="section-title">위치순</h2>
+        <section className="hall-of-fame-section location-section">
+        <h2 className="section-title section-title-with-icon">
+          <HiMapPin className="section-icon location-icon" />
+          위치순
+        </h2>
         <div className="dog-list-scroll-container">
           <div className="dog-list">
-            {nearbyDogs.map(dog => (
+            {nearbyDogs.map((dog, index) => (
               <TiltableDogCard key={dog.id} dog={dog} onClick={() => openModal(dog)}>
+                <div className="rank-badge location-badge">{index + 1}</div>
                 <img src={dog.photoUrl || dog.imageUrl} alt={dog.name} className="dog-card-background-image" />
                 <div className="dog-card-content">
                   <h3 className="dog-name">{dog.name}</h3>
@@ -114,12 +118,16 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="hall-of-fame-section">
-        <h2 className="section-title">하트순</h2>
+      <section className="hall-of-fame-section likes-section">
+        <h2 className="section-title section-title-with-icon">
+          <HiHeart className="section-icon likes-icon" />
+          하트순
+        </h2>
         <div className="dog-list-scroll-container">
           <div className="dog-list">
-            {popularDogs.map(dog => (
+            {popularDogs.map((dog, index) => (
               <TiltableDogCard key={dog.id} dog={dog} onClick={() => openModal(dog)}>
+                <div className="rank-badge likes-badge">{index + 1}</div>
                 <img src={dog.photoUrl || dog.imageUrl} alt={dog.name} className="dog-card-background-image" />
                 <div className="dog-card-content">
                   <h3 className="dog-name">{dog.name}</h3>
