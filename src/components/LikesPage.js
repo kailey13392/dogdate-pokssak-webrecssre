@@ -4,7 +4,7 @@ import DogProfileCard from './DogprofileCard';
 import { HiCheckCircle, HiXCircle } from "react-icons/hi2";
 import './LikesPage.css';
 
-// --- 가짜 데이터 ---
+// --- 가짜 데��터 ---
 const fakeSentRequests = [
   {
     id: 1,
@@ -121,13 +121,13 @@ const LikesPage = () => {
           className={`toggle-btn ${activeTab === 'sent' ? 'active' : ''}`}
           onClick={() => setActiveTab('sent')}
         >
-          내가 매칭 신청한 사람
+          보낸 요청
         </button>
         <button
           className={`toggle-btn ${activeTab === 'received' ? 'active' : ''}`}
           onClick={() => setActiveTab('received')}
         >
-          나한테 매칭 보낸사람
+          받은 요청
         </button>
       </div>
       <div className="likes-list-vertical">
