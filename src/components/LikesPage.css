@@ -90,7 +90,7 @@
 /* 버튼을 카드 위에 오버레이 */
 .match-request-actions-overlay {
   position: absolute;
-  bottom: 1rem;
+  top: 1rem;
   left: 1rem;
   right: 1rem;
   display: flex;
