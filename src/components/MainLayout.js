@@ -40,15 +40,18 @@ function MainLayout() {
         <Outlet context={{ openModal }} /> {/* openModal 함수를 context로 전달 */}
       </main>
       <nav className="bottom-nav">
-        {navItems.map((item) => (
-          <NavLink
-            key={item.path}
-            to={item.path}
-            className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
-            <i className={item.icon}></i>
-            <span>{item.label}</span>
-          </NavLink>
-        ))}
+        {navItems.map((item) => {
+          const IconComponent = item.icon;
+          return (
+            <NavLink
+              key={item.path}
+              to={item.path}
+              className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
+              <IconComponent size={24} />
+              <span>{item.label}</span>
+            </NavLink>
+          );
+        })}
       </nav>
       {/* selectedDog가 있을 때만 ProfileModal을 렌더링 */}
       {selectedDog && <ProfileModal dog={selectedDog} onClose={closeModal} />}
