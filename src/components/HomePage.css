@@ -26,13 +26,13 @@
   padding: 0 2rem;
 }
 
-/* 아이콘이 있는 섹션 제목 - 아이콘을 텍스트 오른쪽에 배치 */
+/* 아이콘이 있는 섹션 제목 - 텍스트 뒤에 아이콘 배치 */
 .section-title-with-icon {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 0.5rem;
-  flex-direction: row-reverse; /* 텍스트 먼저 보이고, 아이콘이 오른쪽에 */
+  flex-direction: row; /* 텍스트 먼저, 그 뒤에 아이콘 */
 }
 
 .section-icon {
