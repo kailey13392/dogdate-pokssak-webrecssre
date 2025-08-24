@@ -65,7 +65,7 @@
   gap: 0.5rem;
 }
 
-/* 강아지 리스트 래퍼 */
+/* 강아지 리스트 래�� */
 .dog-list-wrapper {
   position: relative;
 }
@@ -125,7 +125,7 @@
   pointer-events: auto;
 }
 
-/* 기존 버튼들을 볼드 화살표 스타일로 변경 */
+/* 기존 버튼들을 볼�� 화살표 스타일로 변경 */
 .scroll-btn {
   background: none !important;
   border: none !important;
@@ -301,15 +301,9 @@
 /* 트로피 떠다��는 애니메이션 */
 
 
-/* 명예의전당 제��� 강화 */
+/* 명예의전당 제목 - 숨김 */
 .hall-of-fame-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0 0 1rem 0;
-  line-height: 1;
-  text-align: center;
-  color: #1f2937; /* 모던한 다크 그레이 */
-  letter-spacing: -0.02em;
+  display: none;
 }
 
 .hall-of-fame-section {
