@@ -205,7 +205,7 @@
 /* 내 강아지와 똑같��� 가로 레이아웃 */
 .likes-dog-card-wrapper .dog-info-layout {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: flex-start;
 }
 
@@ -215,6 +215,7 @@
   flex-direction: column;
   gap: 0.3rem;
   margin-left: -0.3rem;
+  min-width: 0;
 }
 
 .likes-dog-card-wrapper .dog-info-left * {
@@ -227,6 +228,8 @@
   flex: 1;
   display: flex;
   align-items: flex-start;
+  justify-content: flex-end;
+  min-width: 0;
 }
 
 /* 내 강아지와 똑같은 텍스트 스타일 */
