@@ -102,13 +102,14 @@
 }
 
 .dog-profile-card .dog-profile-bio {
-  font-size: 0.9rem; /* 약간 작은 폰트 사이즈 */
+  font-size: 0.85rem; /* 조금 더 작은 폰트 사이즈 */
   color: #e0e0e0;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.6; /* 줄 간격 늘림 */
   display: -webkit-box;
-  -webkit-line-clamp: 4; /* 4줄까지 표시 */
+  -webkit-line-clamp: 6; /* 6줄까지 표시 */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-height: 5.1rem; /* 최대 높이 설정 */
 }
