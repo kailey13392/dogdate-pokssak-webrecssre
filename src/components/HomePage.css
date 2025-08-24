@@ -78,6 +78,36 @@
   transform: scale(0.95);
 }
 
+/* 섹션별 스크롤 버튼 색상 */
+.location-section .scroll-btn {
+  border-color: rgba(71, 85, 105, 0.2);
+}
+
+.location-section .scroll-btn:hover {
+  background: rgba(71, 85, 105, 0.05);
+  border-color: rgba(71, 85, 105, 0.3);
+}
+
+.likes-section .scroll-btn {
+  border-color: rgba(55, 65, 81, 0.2);
+}
+
+.likes-section .scroll-btn:hover {
+  background: rgba(55, 65, 81, 0.05);
+  border-color: rgba(55, 65, 81, 0.3);
+}
+
+/* 작은 화면에서는 스크롤 버튼 숨기기 */
+@media (max-width: 480px) {
+  .scroll-controls {
+    display: none;
+  }
+
+  .section-header-with-controls {
+    justify-content: center;
+  }
+}
+
 /* 위치순 섹�� 색상 테마 */
 .location-section {
   position: relative;
@@ -201,7 +231,7 @@
   position: absolute;
   top: 1.5rem;
   font-size: 2rem;
-  color: #8b6914; /* 진한 골드 브라운 */
+  color: #8b6914; /* 진한 골드 브���운 */
   opacity: 0.6; /* 더 진하게 */
   z-index: 1;
   transition: all 0.3s ease;
