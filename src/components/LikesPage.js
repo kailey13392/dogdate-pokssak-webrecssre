@@ -17,7 +17,7 @@ const fakeSentRequests = [
       gender: '남아',
       city: '경기',
       district: '성남시',
-      bio: '작지만 용감한 레오! 다른 강아지 친구들과 어울리는 걸 좋아해요.',
+      bio: '작지만 용감한 레오! 다른 강아지 친구들과 ��울리는 걸 좋아해요.',
       imageUrl: 'https://images.unsplash.com/photo-1598875184988-5e67b1a874b8?q=80&w=800',
       likes: 110
     }
@@ -33,7 +33,7 @@ const fakeSentRequests = [
       gender: '여아',
       city: '인천',
       district: '연수구',
-      bio: '순하고 낮잠 자는 걸 좋아하는 보리 공주님이��요.',
+      bio: '순하고 낮잠 자는 걸 좋아하는 보리 공주님이에요.',
       imageUrl: 'https://images.unsplash.com/photo-1548681528-6a5c45b66b42?q=80&w=800',
       likes: 100
     }
@@ -170,11 +170,11 @@ const LikesPage = () => {
                   {activeTab === 'received' && (
                     <div className="match-request-actions-overlay">
                       <button className="action-btn accept-btn" onClick={() => handleAccept(request)}>
-                        <HiCheck className="btn-icon" />
+                        <HiCheckCircle className="btn-icon" />
                         수락
                       </button>
                       <button className="action-btn reject-btn" onClick={() => handleReject(request)}>
-                        <HiX className="btn-icon" />
+                        <HiXCircle className="btn-icon" />
                         거절
                       </button>
                     </div>
