@@ -41,14 +41,18 @@
 .message {
   display: flex;
   margin-bottom: 0.3rem;
+  align-items: flex-end;
+  gap: 0.4rem;
 }
 
 .message.sent {
   justify-content: flex-end;
+  flex-direction: row;
 }
 
 .message.received {
   justify-content: flex-start;
+  flex-direction: row;
 }
 
 .message-content {
