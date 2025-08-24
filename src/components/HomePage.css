@@ -37,7 +37,7 @@
   font-size: 1.4rem;
 }
 
-/* 위치순 섹션 색상 테마 */
+/* 위치순 섹�� 색상 테마 */
 .location-section {
   position: relative;
   background: linear-gradient(90deg, rgba(71, 85, 105, 0.03) 0%, transparent 50%, rgba(71, 85, 105, 0.03) 100%);
@@ -191,34 +191,10 @@
   color: #a67c00; /* 호버 시 더 밝은 골드 */
 }
 
-.hall-of-fame-container:hover .trophy-left {
-  animation-play-state: paused;
-  transform: rotate(-12deg) scale(1.1) translateY(-2px);
-}
 
-.hall-of-fame-container:hover .trophy-right {
-  animation-play-state: paused;
-  transform: rotate(12deg) scale(1.1) translateY(-2px);
-}
 
 /* 트로피 떠다��는 애니메이션 */
-@keyframes trophyFloatLeft {
-  0%, 100% {
-    transform: translateY(0) rotate(-12deg);
-  }
-  50% {
-    transform: translateY(-3px) rotate(-12deg);
-  }
-}
 
-@keyframes trophyFloatRight {
-  0%, 100% {
-    transform: translateY(0) rotate(12deg);
-  }
-  50% {
-    transform: translateY(-3px) rotate(12deg);
-  }
-}
 
 /* 명예의전당 제목 강화 */
 .hall-of-fame-title {
