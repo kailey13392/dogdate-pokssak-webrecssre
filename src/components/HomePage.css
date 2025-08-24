@@ -37,74 +37,52 @@
   font-size: 1.4rem;
 }
 
-/* 섹션 헤더와 스크롤 컨트롤 */
-.section-header-with-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  padding: 0 2rem;
+/* 강아지 리스트 래퍼 */
+.dog-list-wrapper {
+  position: relative;
 }
 
-.scroll-controls {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.scroll-btn {
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
+/* 오버레이 스크롤 버튼 */
+.scroll-overlay-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  width: 3rem;
+  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
-  color: #374151;
-  font-size: 1.2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  backdrop-filter: blur(8px);
 }
 
-.scroll-btn:hover {
-  background: #ffffff;
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  color: #1f2937;
+.scroll-overlay-left {
+  left: 0.5rem;
 }
 
-.scroll-btn:active {
-  transform: scale(0.95);
+.scroll-overlay-right {
+  right: 0.5rem;
 }
 
-/* 섹션별 스크롤 버튼 색상 */
-.location-section .scroll-btn {
-  border-color: rgba(71, 85, 105, 0.2);
+.scroll-overlay-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: translateY(-50%) scale(1.05);
 }
 
-.location-section .scroll-btn:hover {
-  background: rgba(71, 85, 105, 0.05);
-  border-color: rgba(71, 85, 105, 0.3);
+.scroll-overlay-btn:active {
+  transform: translateY(-50%) scale(0.95);
 }
 
-.likes-section .scroll-btn {
-  border-color: rgba(55, 65, 81, 0.2);
-}
-
-.likes-section .scroll-btn:hover {
-  background: rgba(55, 65, 81, 0.05);
-  border-color: rgba(55, 65, 81, 0.3);
-}
-
-/* 작은 화면에서는 스크롤 버튼 숨기기 */
+/* 작은 화면에서는 오버레이 버튼 숨기기 */
 @media (max-width: 480px) {
-  .scroll-controls {
+  .scroll-overlay-btn {
     display: none;
-  }
-
-  .section-header-with-controls {
-    justify-content: center;
   }
 }
 
@@ -231,7 +209,7 @@
   position: absolute;
   top: 1.5rem;
   font-size: 2rem;
-  color: #8b6914; /* 진한 골드 브���운 */
+  color: #8b6914; /* 진한 골드 브라운 */
   opacity: 0.6; /* 더 진하게 */
   z-index: 1;
   transition: all 0.3s ease;
