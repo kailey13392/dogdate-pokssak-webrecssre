@@ -57,7 +57,15 @@
   top: 2.5rem;
   right: 3rem;
   z-index: 10;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.15); /* 미묘한 반투명 배경 */
+  backdrop-filter: blur(10px); /* 블러 효과 */
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.settings-button-on-card:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.1);
 }
 
 /* 멍예의 ���당 섹��� 공통 스타일 */
