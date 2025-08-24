@@ -14,14 +14,14 @@
 .chat-room-list-header {
   background-color: #ffffff;
   text-align: left;
-  font-size: 1.125rem;
+  font-size: 1rem; /* 글자 크기 줄임 */
   color: #111827;
   font-weight: 600;
-  padding: 1rem 1rem 0.5rem 1rem; /* 위쪽 여백은 유지, 아래쪽 여백 줄임 */
+  padding: 0.75rem 1rem 0.3rem 1rem; /* 위아래 패딩 모두 줄여서 더 위로 올림 */
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom: 1px solid #e5e7eb; /* 구분선을 제목 바로 밑으로 */
-  margin-bottom: 0.5rem; /* 구분선과 채팅목록 사이 약간의 여백 */
+  margin-bottom: 0.3rem; /* 구분선과 채팅목록 사이 여백도 줄임 */
 }
 
 .chat-room-list-content {
