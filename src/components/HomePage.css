@@ -32,7 +32,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 0.5rem;
-  flex-direction: row; /* 텍스트 먼저, 그 다음 아이콘 */
+  flex-direction: row-reverse; /* 텍스트 먼저 보이고, 아이콘이 오른쪽에 */
 }
 
 .section-icon {
