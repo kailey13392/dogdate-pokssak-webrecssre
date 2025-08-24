@@ -194,7 +194,7 @@
   margin: 0 0 1rem 0;
   line-height: 1;
   text-align: center;
-  color: #1f2937; /* 모던한 다크 그레이 */
+  color: #1f2937; /* 모던한 다크 그레�� */
   letter-spacing: -0.02em;
 }
 
@@ -235,7 +235,7 @@
   bottom: -0.5rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 5.5rem; /* "내 강아지" 글자 길��에 맞춤 */
+  width: 5.5rem; /* "내 강아지" 글자 길이에 맞춤 */
   height: 2px;
   background: #333;
   border-radius: 1px;
@@ -314,9 +314,10 @@
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15), 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
-.dog-card:hover .rank-badge {
-  transform: scale(1.05);
-  color: #1f2937;
+.dog-card:hover .rank-badge.first-place {
+  transform: scale(1.1);
+  color: #b91c1c;
+  filter: drop-shadow(0 2px 6px rgba(220, 38, 38, 0.5));
 }
 
 /* 순위 뱃지 트랜지션 */
