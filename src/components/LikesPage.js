@@ -171,11 +171,9 @@ const LikesPage = () => {
                     <div className="match-request-actions-overlay">
                       <button className="action-btn accept-btn" onClick={() => handleAccept(request)}>
                         <HiCheckCircle className="btn-icon" />
-                        수락
                       </button>
                       <button className="action-btn reject-btn" onClick={() => handleReject(request)}>
                         <HiXCircle className="btn-icon" />
-                        거절
                       </button>
                     </div>
                   )}
