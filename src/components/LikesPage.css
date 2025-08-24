@@ -76,8 +76,8 @@
 /* 내 강아지 스타일로 카드 래퍼 */
 .likes-dog-card-wrapper {
   position: relative;
-  width: 300px; /* 내 강아��보다 조금 작게 */
-  height: 300px; /* 정사각형 */
+  width: 350px; /* 내 강아지와 동일한 크기 */
+  height: 350px; /* 내 강아지와 동일한 크기 */
   margin: 0 auto;
 }
 
