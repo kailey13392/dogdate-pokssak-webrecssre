@@ -164,6 +164,27 @@
   border: 1px solid #f1f5f9;
 }
 
+/* 트로피 아이콘 */
+.trophy-icon {
+  position: absolute;
+  top: 1.5rem;
+  font-size: 2rem;
+  color: #d4a574; /* 골드 컬러 */
+  opacity: 0.3;
+  z-index: 1;
+  filter: drop-shadow(0 2px 4px rgba(212, 165, 116, 0.3));
+}
+
+.trophy-left {
+  left: 1.5rem;
+  transform: rotate(-15deg);
+}
+
+.trophy-right {
+  right: 1.5rem;
+  transform: rotate(15deg);
+}
+
 /* 명예의전당 제목 강화 */
 .hall-of-fame-title {
   font-size: 2rem;
@@ -215,7 +236,7 @@
     padding: 0.5rem 0 1rem 0; /* Add some padding for aesthetics */
 }
 
-/* 스크롤바 ��기기 (선택 사항) */
+/* 스크롤바 숨기기 (선택 사항) */
 .dog-list-scroll-container::-webkit-scrollbar {
     display: none;
 }

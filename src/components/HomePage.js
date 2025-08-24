@@ -92,6 +92,8 @@ function HomePage() {
       </section>
 
       <div className="hall-of-fame-container">
+        <HiTrophy className="trophy-icon trophy-left" />
+        <HiTrophy className="trophy-icon trophy-right" />
         <div className="hall-of-fame-section">
           <h2 className="hall-of-fame-title">명예의전당</h2>
         </div>
