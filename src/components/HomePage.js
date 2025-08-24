@@ -44,7 +44,7 @@ function HomePage() {
   };
 
   useEffect(() => {
-    // 백엔드 연결 없이 임시 데이터로 작동
+    // 백엔�� 연결 없이 임시 데이터로 작동
     setIsLoading(true);
 
     // 임시 내 강아지 데이터
@@ -63,7 +63,7 @@ function HomePage() {
 
     // 로딩 시뮬레이션
     setTimeout(() => {
-      setMyDog(myDogData);
+      setMyDog(null);
 
       setPopularDogs([
         { id: 1, name: '코코', breed: '말티즈', age: 2, gender: '여아', city: '서울', district: '마포구', bio: '에너지가 ���치는 코코입니다! 공놀이를 제일 좋아해요.', imageUrl: 'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?q=80&w=800', likes: 120 },
