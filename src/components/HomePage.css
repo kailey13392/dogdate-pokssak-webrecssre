@@ -54,7 +54,7 @@
   padding: 0;
 }
 
-/* 위치순 섹션 제목을 사진과 같은 위치에서 시작하게 조정 */
+/* 위치순 ��션 제목을 사진과 같은 위치에서 시작하게 조정 */
 .location-section .section-title {
   margin-left: 0;
   padding: 0 2rem; /* 사진과 정확히 같은 패딩 */
@@ -162,7 +162,7 @@
 .location-section {
   position: relative;
   background: linear-gradient(90deg, rgba(71, 85, 105, 0.03) 0%, transparent 50%, rgba(71, 85, 105, 0.03) 100%);
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   border-radius: 12px;
   margin-bottom: 1.5rem;
 }
@@ -401,7 +401,7 @@
   position: relative; /* For positioning children */
   /* flex: 0 0 150px; */ /* Removed fixed size */
   /* width: 150px; */ /* Removed fixed size */
-  aspect-ratio: 1 / 1.25; /* 세로가 약간 긴 카드 비율 */
+  aspect-ratio: 1 / 1.25; /* 세���가 약간 긴 카드 비율 */
   background-color: #f0f0f0; /* Fallback color */
   border-radius: 16px; /* 더 둥근 모서리 */
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.06); /* 더 세련된 그림자 */
