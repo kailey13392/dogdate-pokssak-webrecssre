@@ -57,7 +57,7 @@
 /* 위치순 섹션 제목을 사진과 같은 위치에서 시작하게 조정 */
 .location-section .section-title {
   margin-left: 0;
-  padding-left: 2rem; /* 사진과 같은 시작점 */
+  padding: 0 2rem; /* 사진과 정확히 같은 패딩 */
 }
 
 .scroll-controls {
@@ -330,7 +330,7 @@
   justify-content: center;
   width: 350px; /* 더 크고 정사각형으로 */
   height: 350px; /* 정사각형으로 width와 동일하게 */
-  padding: 1.5rem 0; /* 여백도 함께 키워 더 ��원한 ������으로 */
+  padding: 1.5rem 0; /* 여백도 함께 키워 더 ��원한 �������으로 */
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
   margin: 0 auto;
@@ -388,7 +388,7 @@
 .dog-list {
     display: flex;
     gap: 1rem; /* 카드 사이 간격 */
-    padding: 0 2rem; /* 명예의전당 컨테이너 내부에서 더 큰 패딩 */
+    padding: 0 2rem; /* 명예의전당 컨테이너 ��부에서 더 큰 패딩 */
 }
 
 /* 카드 기본 상태 - 애니메이션 제거 */
