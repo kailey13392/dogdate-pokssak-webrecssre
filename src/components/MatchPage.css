@@ -146,21 +146,33 @@
 }
 
 .action-button.like {
-  background-color: var(--color-action-accept);
-  border-color: var(--color-action-accept);
-  color: var(--color-text-on-accent);
+  background: linear-gradient(135deg, #E91E63 0%, #C2185B 100%);
+  color: #ffffff;
+}
+
+.action-button.like:hover {
+  background: linear-gradient(135deg, #C2185B 0%, #AD1457 100%);
+  box-shadow: 0 8px 30px rgba(233, 30, 99, 0.3), 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .action-button.dislike {
-  background-color: var(--color-action-reject);
-  border-color: var(--color-action-reject);
-  color: var(--color-text-on-accent);
+  background: linear-gradient(135deg, #9E9E9E 0%, #757575 100%);
+  color: #ffffff;
+}
+
+.action-button.dislike:hover {
+  background: linear-gradient(135deg, #757575 0%, #616161 100%);
+  box-shadow: 0 8px 30px rgba(158, 158, 158, 0.25), 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .action-button.match {
-  background-color: var(--color-action-match);
-  border-color: var(--color-action-match);
-  color: var(--color-text-on-accent);
+  background: linear-gradient(135deg, #8D6E63 0%, #6D4C41 100%);
+  color: #ffffff;
+}
+
+.action-button.match:hover {
+  background: linear-gradient(135deg, #6D4C41 0%, #5D4037 100%);
+  box-shadow: 0 8px 30px rgba(141, 110, 99, 0.3), 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .no-more-cards {
