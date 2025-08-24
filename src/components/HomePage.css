@@ -58,9 +58,11 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   z-index: 10;
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .scroll-overlay-left {
