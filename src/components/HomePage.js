@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useOutletContext, useNavigate } from 'react-router-dom'; // useNavigate 임포트
 import './HomePage.css';
 import { BASE_URL } from '../config';
@@ -6,7 +6,7 @@ import DogProfileCard from './DogprofileCard';
 import TiltableDogCard from './TiltableDogCard';
 import MyDogProfileCard from './MyDogProfileCard';
 import { FiSettings } from "react-icons/fi";
-import { HiMapPin, HiHeart, HiTrophy } from "react-icons/hi2";
+import { HiMapPin, HiHeart, HiTrophy, HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 
 // API 호출을 위한 가짜 데이터 (더미 데이터는 이제 사용하지 않음)
 
