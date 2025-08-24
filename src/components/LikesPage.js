@@ -144,7 +144,28 @@ const LikesPage = () => {
             return (
               <div key={request.id} className="match-request-item">
                 <div className="likes-dog-card-wrapper">
-                  <DogProfileCard dog={request.dog} onClick={() => openModal({ dog: request.dog, user: { nickname: activeTab === 'sent' ? request.toUserNickname : request.fromUserNickname }})} />
+                  <div className="dog-profile-card" onClick={() => openModal({ dog: request.dog, user: { nickname: activeTab === 'sent' ? request.toUserNickname : request.fromUserNickname }})}>
+                    <img
+                      src={request.dog.photoUrl || request.dog.imageUrl}
+                      alt={request.dog.name}
+                      className="dog-card-background-image"
+                    />
+                    <div className="my-dog-content">
+                      <div className="dog-info-layout">
+                        <div className="dog-info-left">
+                          <h3 className="dog-name">{request.dog.name}</h3>
+                          <p className="dog-details">{request.dog.breed} / {request.dog.age}살</p>
+                          {(request.dog.city && request.dog.district) && (
+                            <p className="dog-extra-info">{request.dog.city} {request.dog.district}</p>
+                          )}
+                          {request.dog.distance && <p className="dog-extra-info">{request.dog.distance} 이내</p>}
+                        </div>
+                        <div className="dog-info-right">
+                          <p className="dog-profile-bio">{request.dog.bio || '한 줄 소개가 아직 없습니다.'}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   {activeTab === 'received' && (
                     <div className="match-request-actions-overlay">
                       <button className="action-btn accept-btn" onClick={() => handleAccept(request)}>수락</button>
