@@ -82,9 +82,6 @@ function LoginPage() {
             />
             <div className="bottom-action">
               <button type="submit" className="submit-button">로그인</button>
-              <button type="button" onClick={handleDevLoginBypass} className="submit-button" style={{backgroundColor: '#4CAF50', marginTop: '10px'}}>
-                개발용 자동 로그인
-              </button>
             </div>
           </form>
           <p className="link-text">
