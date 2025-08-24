@@ -169,8 +169,14 @@ const LikesPage = () => {
                   </div>
                   {activeTab === 'received' && (
                     <div className="match-request-actions-overlay">
-                      <button className="action-btn accept-btn" onClick={() => handleAccept(request)}>수락</button>
-                      <button className="action-btn reject-btn" onClick={() => handleReject(request)}>거절</button>
+                      <button className="action-btn accept-btn" onClick={() => handleAccept(request)}>
+                        <HiCheck className="btn-icon" />
+                        수락
+                      </button>
+                      <button className="action-btn reject-btn" onClick={() => handleReject(request)}>
+                        <HiX className="btn-icon" />
+                        거절
+                      </button>
                     </div>
                   )}
                 </div>
