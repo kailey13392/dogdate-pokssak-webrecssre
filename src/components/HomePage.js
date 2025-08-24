@@ -19,6 +19,23 @@ function HomePage() {
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(true); // 로딩 상태 추가
 
+  // 스크롤 컨테이너 참조
+  const nearbyScrollRef = useRef(null);
+  const popularScrollRef = useRef(null);
+
+  // 스크롤 함수들
+  const scrollLeft = (ref) => {
+    if (ref.current) {
+      ref.current.scrollBy({ left: -200, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRight = (ref) => {
+    if (ref.current) {
+      ref.current.scrollBy({ left: 200, behavior: 'smooth' });
+    }
+  };
+
   const handleSaveMyDog = (updatedDog) => {
     console.log("Saving dog:", updatedDog);
     setMyDog(updatedDog);
@@ -50,7 +67,7 @@ function HomePage() {
       setPopularDogs([
         { id: 1, name: '코코', breed: '말티즈', age: 2, gender: '여아', city: '서울', district: '마포구', bio: '에너지가 ���치는 코코입니다! 공놀이를 제일 좋아해요.', imageUrl: 'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?q=80&w=800', likes: 120 },
         { id: 2, name: '레오', breed: '포메라니안', age: 3, gender: '남아', city: '경기', district: '성남시', bio: '작지만 용감한 레오! 다른 강아지 친구들과 어울리는 걸 좋아해요.', imageUrl: 'https://images.unsplash.com/photo-1598875184988-5e67b1a874b8?q=80&w=800', likes: 110 },
-        { id: 3, name: '보리', breed: '시츄', age: 4, gender: '여아', city: '인천', district: '연수구', bio: '순하고 낮잠 자는 걸 좋아하는 보�� 공주님이에요.', imageUrl: 'https://images.unsplash.com/photo-1548681528-6a5c45b66b42?q=80&w=800', likes: 100 },
+        { id: 3, name: '보리', breed: '시츄', age: 4, gender: '여아', city: '인천', district: '연수구', bio: '순하고 낮잠 자는 걸 좋아���는 보�� 공주님이에요.', imageUrl: 'https://images.unsplash.com/photo-1548681528-6a5c45b66b42?q=80&w=800', likes: 100 },
         { id: 4, name: '초코', breed: '요크셔테리어', age: 5, gender: '남아', city: '부산', district: '해운대구', bio: '간식이라면 뭐든지 하는 먹보랍니다.', imageUrl: 'https://images.unsplash.com/photo-1554196409-c44b5b7895f3?q=80&w=800', likes: 90 },
         { id: 5, name: '마루', breed: '닥스훈트', age: 6, gender: '남아', city: '대구', district: '수성구', bio: '짧은 다리가 매력적인 마루입니다. 산책 메이트 구해요!', imageUrl: 'https://images.unsplash.com/photo-1529429617124-95b109e86bb8?q=80&w=800', likes: 80 },
       ]);
