@@ -73,25 +73,33 @@
   color: #374151;
 }
 
-/* 순위 뱃지 */
+/* 순�� 뱃지 */
 .rank-badge {
   position: absolute;
-  top: 0.8rem;
-  left: 0.8rem;
-  font-size: 1.2rem;
-  font-weight: 900;
-  color: white;
+  top: 0.7rem;
+  left: 0.7rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
   z-index: 5;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
 }
 
 .location-badge {
-  color: #f8fafc; /* 깔끔한 흰색 */
+  background: linear-gradient(135deg, #475569 0%, #334155 100%);
 }
 
 .likes-badge {
-  color: #f8fafc; /* 깔끔한 흰색 */
+  background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
 }
 
 .hall-of-fame-title {
