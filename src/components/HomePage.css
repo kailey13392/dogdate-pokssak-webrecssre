@@ -169,11 +169,11 @@
   position: absolute;
   top: 1.5rem;
   font-size: 2rem;
-  color: #c19a6b; /* 세련된 골드 컬러 */
-  opacity: 0.25;
+  color: #8b6914; /* 진한 골드 브라운 */
+  opacity: 0.6; /* 더 진하게 */
   z-index: 1;
   transition: all 0.3s ease;
-  filter: drop-shadow(0 2px 4px rgba(193, 154, 107, 0.2));
+  filter: drop-shadow(0 2px 6px rgba(139, 105, 20, 0.4));
 }
 
 .trophy-left {
@@ -189,7 +189,8 @@
 }
 
 .hall-of-fame-container:hover .trophy-icon {
-  opacity: 0.4;
+  opacity: 0.8;
+  color: #a67c00; /* 호버 시 더 밝은 골드 */
 }
 
 .hall-of-fame-container:hover .trophy-left {
@@ -369,7 +370,7 @@
   justify-content: flex-end; /* Push content to the bottom */
   padding: 0.75rem;
   box-sizing: border-box;
-  /* 더 세련된 그라데이션 배경 */
+  /* 더 세련된 ���라데이션 배경 */
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.75) 0%,
