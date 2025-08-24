@@ -116,33 +116,31 @@ function HomePage() {
         </div>
 
         <section className="hall-of-fame-section location-section">
-        <div className="section-header-with-controls">
-          <h2 className="section-title section-title-with-icon">
-            <HiMapPin className="section-icon location-icon" />
-            위치순
-          </h2>
-          <div className="scroll-controls">
-            <button className="scroll-btn scroll-left" onClick={() => scrollLeft(nearbyScrollRef)}>
-              <HiChevronLeft />
-            </button>
-            <button className="scroll-btn scroll-right" onClick={() => scrollRight(nearbyScrollRef)}>
-              <HiChevronRight />
-            </button>
-          </div>
-        </div>
-        <div className="dog-list-scroll-container" ref={nearbyScrollRef}>
-          <div className="dog-list">
-            {nearbyDogs.map((dog, index) => (
-              <TiltableDogCard key={dog.id} dog={dog} onClick={() => openModal(dog)}>
-                {index === 0 && <div className="rank-badge location-badge first-place"><HiHeart /></div>}
-                <img src={dog.photoUrl || dog.imageUrl} alt={dog.name} className="dog-card-background-image" />
-                <div className="dog-card-content">
-                  <h3 className="dog-name">{dog.name}</h3>
-                  <p className="dog-details">{dog.breed} / {dog.age}살</p>
-                  <p className="dog-extra-info">{dog.distance} 이내</p>
-                </div>
-              </TiltableDogCard>
-            ))}
+        <h2 className="section-title section-title-with-icon">
+          <HiMapPin className="section-icon location-icon" />
+          위치순
+        </h2>
+        <div className="dog-list-wrapper">
+          <button className="scroll-overlay-btn scroll-overlay-left" onClick={() => scrollLeft(nearbyScrollRef)}>
+            <HiChevronLeft />
+          </button>
+          <button className="scroll-overlay-btn scroll-overlay-right" onClick={() => scrollRight(nearbyScrollRef)}>
+            <HiChevronRight />
+          </button>
+          <div className="dog-list-scroll-container" ref={nearbyScrollRef}>
+            <div className="dog-list">
+              {nearbyDogs.map((dog, index) => (
+                <TiltableDogCard key={dog.id} dog={dog} onClick={() => openModal(dog)}>
+                  {index === 0 && <div className="rank-badge location-badge first-place"><HiHeart /></div>}
+                  <img src={dog.photoUrl || dog.imageUrl} alt={dog.name} className="dog-card-background-image" />
+                  <div className="dog-card-content">
+                    <h3 className="dog-name">{dog.name}</h3>
+                    <p className="dog-details">{dog.breed} / {dog.age}살</p>
+                    <p className="dog-extra-info">{dog.distance} 이내</p>
+                  </div>
+                </TiltableDogCard>
+              ))}
+            </div>
           </div>
         </div>
       </section>
