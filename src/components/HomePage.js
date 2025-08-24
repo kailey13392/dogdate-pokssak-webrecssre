@@ -175,7 +175,7 @@ function HomePage() {
             ))}
           </div>
         </div>
-        </section>
+      </section>
       </div>
     </div>
   );
