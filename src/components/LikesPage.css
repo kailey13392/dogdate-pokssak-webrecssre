@@ -269,11 +269,10 @@
   color: #e0e0e0;
   margin: 0;
   line-height: 1.6;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  text-align: right;
+  max-width: 150px;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 /* 이미지 스타일 */
