@@ -26,7 +26,7 @@
   padding: 0 2rem;
 }
 
-/* 아이콘이 있는 섹션 제목 - 텍스트 뒤에 아��콘 배치 */
+/* 아이콘이 있는 섹션 제목 - 텍스트 뒤에 아이콘 배치 */
 .section-title-with-icon {
   display: flex;
   align-items: center;
@@ -46,6 +46,11 @@
   align-items: center;
   margin-bottom: 1rem;
   padding: 0 2rem;
+}
+
+/* 헤더 컨트롤 안의 제목은 추가 패딩 제거 */
+.section-header-with-controls .section-title {
+  padding: 0;
 }
 
 .scroll-controls {
@@ -182,7 +187,7 @@
   color: #374151;
 }
 
-/* 순위 뱃지 - 1등 하트만 */
+/* 순�� 뱃지 - 1등 하트만 */
 .rank-badge.first-place {
   position: absolute;
   top: 0.8rem;
