@@ -37,6 +37,47 @@
   font-size: 1.4rem;
 }
 
+/* 섹션 헤더와 스크롤 컨트롤 */
+.section-header-with-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+}
+
+.scroll-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.scroll-btn {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #374151;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-btn:hover {
+  background: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: #1f2937;
+}
+
+.scroll-btn:active {
+  transform: scale(0.95);
+}
+
 /* 위치순 섹�� 색상 테마 */
 .location-section {
   position: relative;
@@ -47,7 +88,7 @@
 }
 
 .location-icon {
-  color: #475569; /* 모던한 슬레이트 그레이 */
+  color: #475569; /* 모던한 슬레이트 그��이 */
   filter: drop-shadow(0 1px 2px rgba(71, 85, 105, 0.15));
 }
 
