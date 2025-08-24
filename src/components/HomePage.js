@@ -6,6 +6,7 @@ import DogProfileCard from './DogprofileCard';
 import TiltableDogCard from './TiltableDogCard';
 import MyDogProfileCard from './MyDogProfileCard';
 import { FiSettings } from "react-icons/fi";
+import { HiMapPin, HiHeart } from "react-icons/hi2";
 
 // API 호출을 위한 가짜 데이터 (더미 데이터는 이제 사용하지 않음)
 
