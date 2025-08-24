@@ -143,13 +143,15 @@ const LikesPage = () => {
             }
             return (
               <div key={request.id} className="match-request-item">
-                <DogProfileCard dog={request.dog} onClick={() => openModal({ dog: request.dog, user: { nickname: activeTab === 'sent' ? request.toUserNickname : request.fromUserNickname }})} />
-                {activeTab === 'received' && (
-                  <div className="match-request-actions">
-                    <button onClick={() => handleAccept(request)}>수락</button>
-                    <button onClick={() => handleReject(request)}>거절</button>
-                  </div>
-                )}
+                <div className="likes-dog-card-wrapper">
+                  <DogProfileCard dog={request.dog} onClick={() => openModal({ dog: request.dog, user: { nickname: activeTab === 'sent' ? request.toUserNickname : request.fromUserNickname }})} />
+                  {activeTab === 'received' && (
+                    <div className="match-request-actions-overlay">
+                      <button className="action-btn accept-btn" onClick={() => handleAccept(request)}>수락</button>
+                      <button className="action-btn reject-btn" onClick={() => handleReject(request)}>거절</button>
+                    </div>
+                  )}
+                </div>
               </div>
             );
           })
