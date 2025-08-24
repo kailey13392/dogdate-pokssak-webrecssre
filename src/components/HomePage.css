@@ -62,8 +62,8 @@
   position: relative;
   display: flex;
   justify-content: center;
-  width: 300px; /* 1.5 times the standard dog-card width */
-  height: 281.25px; /* 1.5 times the standard dog-card height */
+  width: 350px; /* 더 크고 정사각형으로 */
+  height: 350px; /* 정사각형으로 width와 동일하게 */
   padding: 1.5rem 0; /* 여백도 함께 키워 더 ��원한 느낌으로 */
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
