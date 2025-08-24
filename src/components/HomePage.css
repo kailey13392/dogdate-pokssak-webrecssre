@@ -28,11 +28,12 @@
 
 /* 아이콘이 있는 섹션 제목 - 텍스트 먼저, 아이콘 뒤에 */
 .section-title-with-icon {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: flex-end; /* row-reverse에서 flex-end가 왼쪽 정렬 */
+  justify-content: flex-start;
   gap: 0.5rem;
-  flex-direction: row-reverse; /* HTML에서 아이콘이 먼저 있지만 텍스트가 먼저 보이게 */
+  flex-direction: row-reverse; /* 아이콘이 HTML에서 먼저 나오지만 텍스트가 화면에서 먼저 */
+  width: auto;
 }
 
 .section-icon {
