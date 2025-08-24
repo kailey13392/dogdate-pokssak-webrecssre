@@ -43,6 +43,26 @@
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+/* 새로운 가로 레이아웃 */
+.dog-info-layout {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.dog-info-left {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.dog-info-right {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
 .dog-profile-card .dog-name {
   font-size: 2.2rem; /* 더욱 큰 폰트 사이즈 */
   font-weight: 600;
@@ -70,12 +90,12 @@
 }
 
 .dog-profile-card .dog-profile-bio {
-  font-size: 1rem; /* Increased font size */
+  font-size: 0.9rem; /* 약간 작은 폰트 사이즈 */
   color: #e0e0e0;
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.4;
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* Allow more lines for bio */
+  -webkit-line-clamp: 4; /* 4줄까지 표시 */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
