@@ -125,6 +125,14 @@
 .message.received .message-time {
   margin-left: 0.2rem;
 }
+
+.system-message {
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-align: center;
+  width: 100%;
+  margin: 0.5rem 0;
+}
   
   
   
