@@ -65,12 +65,12 @@
   gap: 0.5rem;
 }
 
-/* 강아지 리스트 래�� */
+/* 강아지 리스트 래퍼 */
 .dog-list-wrapper {
   position: relative;
 }
 
-/* 위치순 섹션 오버레이 버튼을 헤더 위치로 이동 */
+/* 위치순 섹션 오버레�� 버튼을 헤더 위치로 이동 */
 .location-section .scroll-overlay-btn {
   position: absolute;
   top: -4rem;
@@ -125,7 +125,7 @@
   pointer-events: auto;
 }
 
-/* 기존 버튼들을 볼�� 화살표 스타일로 변경 */
+/* 기존 버튼들을 볼드 화살표 스타일로 변경 */
 .scroll-btn {
   background: none !important;
   border: none !important;
@@ -307,8 +307,8 @@
 }
 
 .hall-of-fame-section {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 .my-dog-profile-wrapper {
