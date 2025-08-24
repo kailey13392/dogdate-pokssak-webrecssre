@@ -32,7 +32,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 0.5rem;
-  flex-direction: row-reverse; /* HTML에서 아이콘이 앞에 있지만, 표시는 텍스트 먼저 */
+  flex-direction: row; /* 텍스트 먼저, 그 다음 아이콘 순서로 */
 }
 
 .section-icon {
@@ -187,7 +187,7 @@
   color: #374151;
 }
 
-/* 순�� 뱃지 - 1등 하트만 */
+/* 순위 뱃지 - 1등 하트만 */
 .rank-badge.first-place {
   position: absolute;
   top: 0.8rem;
