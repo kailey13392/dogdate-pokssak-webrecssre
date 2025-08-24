@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useLocation } from 'react-router-dom';
+import { HiPaperAirplane } from 'react-icons/hi2';
 import './ChatPage.css';
 
 // 임시 채팅 메시지 데이터
