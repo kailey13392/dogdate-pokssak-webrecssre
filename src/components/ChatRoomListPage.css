@@ -8,7 +8,7 @@
   border-radius: 12px; /* 둥근 모서리 */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
   overflow: hidden; /* 내용이 넘칠 경우 숨김 */
-  
+  background: linear-gradient(90deg, rgba(210, 180, 140, 0.1) 0%, rgba(210, 180, 140, 0.05) 50%, rgba(210, 180, 140, 0.1) 100%);
 }
 
 .chat-room-list-header {
@@ -17,7 +17,7 @@
   font-size: 1rem; /* 글자 크기 줄임 */
   color: #111827;
   font-weight: 600;
-  padding: 0.75rem 1rem 0.3rem 1rem; /* 위아래 패딩 모두 줄여서 더 위로 올림 */
+  padding: 0.75rem 1rem 0.3rem 1rem; /* 위아래 패딩 모�� 줄여서 더 위로 올림 */
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom: 1px solid #e5e7eb; /* 구분선을 제목 바로 밑으로 */
