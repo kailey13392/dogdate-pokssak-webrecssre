@@ -26,7 +26,7 @@
 
 .chat-room-list-content {
   flex-grow: 1;
-  padding: 0.5rem 1rem 1rem 1rem; /* 위쪽 패딩 줄여서 구분선과 가깝게 */
+  padding: 0.3rem 1rem 1rem 1rem; /* 위쪽 패딩 더 줄여서 구분선과 더 가깝게 */
   overflow-y: auto;
   display: flex;
   flex-direction: column;
