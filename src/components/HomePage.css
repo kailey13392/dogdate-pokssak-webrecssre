@@ -113,7 +113,7 @@
   text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.9);
 }
 
-/* 기존 스크롤 컨트롤도 호버 시에만 표시 (하트순 섹션용) */
+/* 기존 스크롤 컨트롤도 호버 시에만 표시 (��트순 섹션용) */
 .section-header-with-controls .scroll-controls {
   opacity: 0;
   transition: all 0.3s ease;
@@ -179,7 +179,7 @@
 /* 하트순 섹션 색상 테마 */
 .likes-section {
   position: relative;
-  background: linear-gradient(90deg, rgba(55, 65, 81, 0.03) 0%, transparent 50%, rgba(55, 65, 81, 0.03) 100%);
+  background: linear-gradient(90deg, rgba(210, 180, 140, 0.1) 0%, rgba(210, 180, 140, 0.05) 50%, rgba(210, 180, 140, 0.1) 100%);
   padding: 1.5rem 0;
   border-radius: 12px;
   margin-bottom: 1.5rem;
@@ -426,7 +426,7 @@
   height: 100%;
   object-fit: fill; /* 박스를 완전히 채움 */
   z-index: 1;
-  transition: transform 0.4s ease; /* 이미지 애니메이�� */
+  transition: transform 0.4s ease; /* 이미지 애니메이션 */
 }
 
 .dog-card:hover .dog-card-background-image {
