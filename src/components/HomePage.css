@@ -203,7 +203,7 @@
   transform: rotate(12deg) scale(1.1) translateY(-2px);
 }
 
-/* 트로피 떠다니는 애니메이션 */
+/* 트로피 떠다��는 애니메이션 */
 @keyframes trophyFloatLeft {
   0%, 100% {
     transform: translateY(0) rotate(-12deg);
@@ -268,9 +268,8 @@
   content: '';
   position: absolute;
   bottom: -0.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 3rem;
+  left: 0;
+  right: 0;
   height: 2px;
   background: #333;
   border-radius: 1px;
