@@ -40,10 +40,15 @@
 /* 위치순 섹션 색상 테마 */
 .location-section {
   position: relative;
+  background: linear-gradient(90deg, rgba(8, 145, 178, 0.02) 0%, transparent 50%, rgba(8, 145, 178, 0.02) 100%);
+  padding: 1rem 0;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
 }
 
 .location-icon {
   color: #0891b2; /* 청록색 */
+  filter: drop-shadow(0 1px 2px rgba(8, 145, 178, 0.2));
 }
 
 .location-section .section-title {
@@ -53,10 +58,15 @@
 /* 하트순 섹션 색상 테마 */
 .likes-section {
   position: relative;
+  background: linear-gradient(90deg, rgba(225, 29, 72, 0.02) 0%, transparent 50%, rgba(225, 29, 72, 0.02) 100%);
+  padding: 1rem 0;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
 }
 
 .likes-icon {
   color: #e11d48; /* 빨간색 */
+  filter: drop-shadow(0 1px 2px rgba(225, 29, 72, 0.2));
 }
 
 .likes-section .section-title {
@@ -132,7 +142,7 @@
 }
 
 /* 멍예의 ���당 섹��� 공통 스타일 */
-/* 내 강아지 섹션과 명예의전당 구분 */
+/* 내 강아지 섹션과 명예의전당 ���분 */
 .my-dog-section {
   padding-bottom: 2rem;
   position: relative;
@@ -226,6 +236,26 @@
     display: flex;
     gap: 1rem; /* 카드 사이 간격 */
     padding: 0 2rem; /* 명예의전당 컨테이너 내부에서 더 큰 패딩 */
+}
+
+/* 카드 등장 애니메이션 */
+.dog-card {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.dog-card:nth-child(1) { animation-delay: 0.1s; }
+.dog-card:nth-child(2) { animation-delay: 0.2s; }
+.dog-card:nth-child(3) { animation-delay: 0.3s; }
+.dog-card:nth-child(4) { animation-delay: 0.4s; }
+.dog-card:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
   
 .dog-card {
