@@ -82,7 +82,7 @@ const ChatPage = () => {
       setMessages(prevMessages => [...prevMessages, message]);
       setNewMessage('');
 
-      // 임시로 상대방 자동 응답 (데모용)
+      // 임���로 상대방 자동 응답 (데모용)
       setTimeout(() => {
         const responses = [
           '네, 알겠습니다!',
@@ -144,7 +144,9 @@ const ChatPage = () => {
           onChange={(e) => setNewMessage(e.target.value)}
           placeholder="메시지를 입력하세요..."
         />
-        <button type="submit">전송</button>
+        <button type="submit">
+          <HiPaperAirplane />
+        </button>
       </form>
     </div>
   );
