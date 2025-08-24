@@ -276,7 +276,7 @@
   border: none;
 }
 
-/* 트로피 아이콘 - 숨��� */
+/* 트로피 아이콘 - 숨김 */
 .trophy-icon {
   display: none;
 }
@@ -300,6 +300,25 @@
 
 /* 트로피 떠다��는 애니메이션 */
 
+
+/* 왕관 아이콘 */
+.crown-icon-container {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.crown-icon {
+  font-size: 2.5rem;
+  color: #D2B48C; /* 명예의전당과 어울리는 갈색 */
+  filter: drop-shadow(0 2px 6px rgba(210, 180, 140, 0.4));
+  transition: all 0.3s ease;
+}
+
+.crown-icon:hover {
+  color: #BFA76F;
+  transform: scale(1.1);
+  filter: drop-shadow(0 4px 10px rgba(210, 180, 140, 0.6));
+}
 
 /* 명예의전당 제목 강화 */
 .hall-of-fame-title {
@@ -394,7 +413,7 @@
   position: relative; /* For positioning children */
   /* flex: 0 0 150px; */ /* Removed fixed size */
   /* width: 150px; */ /* Removed fixed size */
-  aspect-ratio: 1 / 1.25; /* 세��가 약간 긴 카드 비율 */
+  aspect-ratio: 1 / 1.25; /* 세로가 약간 긴 카드 비율 */
   background-color: #f0f0f0; /* Fallback color */
   border-radius: 16px; /* 더 둥근 모서리 */
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.06); /* 더 세련된 그림자 */
