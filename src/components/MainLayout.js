@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Outlet, useNavigate, NavLink } from 'react-router-dom';
 import ProfileModal from './ProfileModal'; // ProfileModal 임포트
 import { HiHome, HiHeart, HiSparkles, HiChatBubbleLeftRight } from 'react-icons/hi2';
+import { GiPawPrint } from 'react-icons/gi';
 import './MainLayout.css';
 
 const navItems = [
@@ -32,7 +33,7 @@ function MainLayout() {
       <header className="main-header">
         <h1 className="main-header-title">Mungeting</h1>
         <button onClick={handleLogout} className="paw-logout-button" aria-label="로그아웃">
-          🐾
+          <GiPawPrint size={28} />
         </button>
       </header>
       <main className="main-content">
