@@ -179,13 +179,11 @@
 .trophy-left {
   left: 1.5rem;
   transform: rotate(-12deg);
-  animation: trophyFloatLeft 4s ease-in-out infinite;
 }
 
 .trophy-right {
   right: 1.5rem;
   transform: rotate(12deg);
-  animation: trophyFloatRight 4s ease-in-out infinite 2s; /* 2초 딜레이 */
 }
 
 .hall-of-fame-container:hover .trophy-icon {
