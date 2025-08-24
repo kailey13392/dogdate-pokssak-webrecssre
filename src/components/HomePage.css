@@ -40,63 +40,58 @@
 /* 위치순 섹션 색상 테마 */
 .location-section {
   position: relative;
-  background: linear-gradient(90deg, rgba(8, 145, 178, 0.02) 0%, transparent 50%, rgba(8, 145, 178, 0.02) 100%);
+  background: linear-gradient(90deg, rgba(71, 85, 105, 0.03) 0%, transparent 50%, rgba(71, 85, 105, 0.03) 100%);
   padding: 1rem 0;
   border-radius: 12px;
   margin-bottom: 1.5rem;
 }
 
 .location-icon {
-  color: #0891b2; /* 청록색 */
-  filter: drop-shadow(0 1px 2px rgba(8, 145, 178, 0.2));
+  color: #475569; /* 모던한 슬레이트 그레이 */
+  filter: drop-shadow(0 1px 2px rgba(71, 85, 105, 0.15));
 }
 
 .location-section .section-title {
-  color: #0891b2;
+  color: #475569;
 }
 
 /* 하트순 섹션 색상 테마 */
 .likes-section {
   position: relative;
-  background: linear-gradient(90deg, rgba(225, 29, 72, 0.02) 0%, transparent 50%, rgba(225, 29, 72, 0.02) 100%);
+  background: linear-gradient(90deg, rgba(55, 65, 81, 0.03) 0%, transparent 50%, rgba(55, 65, 81, 0.03) 100%);
   padding: 1rem 0;
   border-radius: 12px;
   margin-bottom: 1.5rem;
 }
 
 .likes-icon {
-  color: #e11d48; /* 빨간색 */
-  filter: drop-shadow(0 1px 2px rgba(225, 29, 72, 0.2));
+  color: #374151; /* 모던한 다크 그레이 */
+  filter: drop-shadow(0 1px 2px rgba(55, 65, 81, 0.15));
 }
 
 .likes-section .section-title {
-  color: #e11d48;
+  color: #374151;
 }
 
 /* 순위 뱃지 */
 .rank-badge {
   position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  width: 1.8rem;
-  height: 1.8rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  font-weight: bold;
+  top: 0.8rem;
+  left: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 900;
   color: white;
   z-index: 5;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  font-family: 'Inter', sans-serif;
 }
 
 .location-badge {
-  background: linear-gradient(135deg, #0891b2, #06b6d4); /* 청록색 그라데이션 */
+  color: #f8fafc; /* 깔끔한 흰색 */
 }
 
 .likes-badge {
-  background: linear-gradient(135deg, #e11d48, #f43f5e); /* 빨간색 그라데이션 */
+  color: #f8fafc; /* 깔끔한 흰색 */
 }
 
 .hall-of-fame-title {
@@ -142,7 +137,7 @@
 }
 
 /* 멍예의 ���당 섹��� 공통 스타일 */
-/* 내 강아지 섹션과 명예의전당 ���분 */
+/* 내 강아지 섹션과 명예의전당 구분 */
 .my-dog-section {
   padding-bottom: 2rem;
   position: relative;
@@ -160,13 +155,13 @@
 
 /* 명예의전당 컨테이너 */
 .hall-of-fame-container {
-  background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+  background: #fbfbfb;
   border-radius: 20px;
   padding: 2rem 0;
   margin-top: 2rem;
   position: relative;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f1f5f9;
 }
 
 /* 명예의전당 제목 강화 */
@@ -176,10 +171,8 @@
   margin: 0 0 1rem 0;
   line-height: 1;
   text-align: center;
-  background: linear-gradient(135deg, #0891b2, #e11d48);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #1f2937; /* 모던한 다크 그레이 */
+  letter-spacing: -0.02em;
 }
 
 .hall-of-fame-section {
@@ -222,7 +215,7 @@
     padding: 0.5rem 0 1rem 0; /* Add some padding for aesthetics */
 }
 
-/* 스크롤바 숨기기 (선택 사항) */
+/* 스크롤바 ��기기 (선택 사항) */
 .dog-list-scroll-container::-webkit-scrollbar {
     display: none;
 }
@@ -300,8 +293,8 @@
 }
 
 .dog-card:hover .rank-badge {
-  transform: scale(1.1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
 }
 
 /* 순위 뱃지 트랜지션 */
