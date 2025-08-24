@@ -158,7 +158,7 @@
   }
 }
 
-/* 위치순 섹�� 색상 테마 */
+/* 위치순 섹�� 색상 테�� */
 .location-section {
   position: relative;
   background: linear-gradient(90deg, rgba(210, 180, 140, 0.1) 0%, rgba(210, 180, 140, 0.05) 50%, rgba(210, 180, 140, 0.1) 100%);
@@ -267,13 +267,13 @@
 
 /* 명예의전당 컨테이너 */
 .hall-of-fame-container {
-  background: #fbfbfb;
+  background: linear-gradient(90deg, rgba(210, 180, 140, 0.1) 0%, rgba(210, 180, 140, 0.05) 50%, rgba(210, 180, 140, 0.1) 100%);
   border-radius: 20px;
   padding: 2rem 0;
   margin-top: 2rem;
   position: relative;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-  border: 1px solid #f1f5f9;
+  box-shadow: 0 2px 12px rgba(210, 180, 140, 0.15);
+  border: 1px solid rgba(210, 180, 140, 0.2);
 }
 
 /* 트로피 아이콘 */
@@ -330,7 +330,7 @@
   justify-content: center;
   width: 350px; /* 더 크고 정사각형으로 */
   height: 350px; /* 정사각형으로 width와 동일하게 */
-  padding: 1.5rem 0; /* 여백도 함께 키워 더 ��원한 �������으로 */
+  padding: 1.5rem 0; /* 여백도 함께 ���워 더 ��원한 �������으로 */
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
   margin: 0 auto;
