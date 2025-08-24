@@ -194,7 +194,7 @@
   color: #374151;
 }
 
-/* 순위 ���지 - 1등 하트만 */
+/* 순위 뱃지 - 1등 하트만 */
 .rank-badge.first-place {
   position: absolute;
   top: 0.8rem;
@@ -276,16 +276,9 @@
   border: none;
 }
 
-/* 트로피 아이콘 */
+/* 트로피 아이콘 - 숨김 */
 .trophy-icon {
-  position: absolute;
-  top: 1.5rem;
-  font-size: 2rem;
-  color: #8b6914; /* 진한 골드 브라운 */
-  opacity: 0.6; /* 더 진하게 */
-  z-index: 1;
-  transition: all 0.3s ease;
-  filter: drop-shadow(0 2px 6px rgba(139, 105, 20, 0.4));
+  display: none;
 }
 
 .trophy-left {
@@ -308,7 +301,7 @@
 /* 트로피 떠다��는 애니메이션 */
 
 
-/* 명예의전당 제목 강화 */
+/* 명예의전당 제��� 강화 */
 .hall-of-fame-title {
   font-size: 2rem;
   font-weight: 700;
@@ -424,7 +417,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: fill; /* 박스를 ���전히 채움 */
+  object-fit: fill; /* 박스를 완전히 채움 */
   z-index: 1;
   transition: transform 0.4s ease; /* 이미지 애니메이션 */
 }
